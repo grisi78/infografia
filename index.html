@@ -1,0 +1,99 @@
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <SCRIPT language="JavaScript">
+        let ruta="../img/";
+        let imagen=document.getElementById("cambiafoto");
+        let imagenes=["logo1.png","proy1.png","logo2.png","logo3.png","logo4.png"];
+        let indice=0;
+        let idInterval=setInterval(function(){
+            let imagen=document.getElementById("cambiafoto");
+            if(indice>4) indice=0;
+                imagen.style.background="url('"+ ruta + imagenes[indice]+"')";
+                indice++;
+        },2000);
+        function fun_mensaje (){
+            var pasignatura = document.getElementById('vasig').value + "*";
+            var pobjetivos = document.getElementById('vobjetivos').value + "*";
+            var ptemas = document.getElementById('vmens').value  + "*";
+            var ptemas2= document.getElementById('vmens2').value  + "*";
+            var ptemas3 = document.getElementById('vmens3').value  + "*";
+            var ptemas4= document.getElementById('vmens4').value  + "*";
+            var ptemas5 = document.getElementById('vmens5').value  + "*";
+            var pben = document.getElementById('vben').value  + "*";
+            var pben2 = document.getElementById('vben2').value  + "*";
+            var pben3 = document.getElementById('vben3').value  + "*";
+            var pben4 = document.getElementById('vben4').value  + "*";
+            var pben5 = document.getElementById('vben5').value  + "*";
+            var pcomp1 = document.getElementById('vcomp1').value  + "*";
+            var pcomp2 = document.getElementById('vcomp2').value  + "*";
+            var pcomp3 = document.getElementById('vcomp3').value  + "*";
+            var pcomp4 = document.getElementById('vcomp4').value  + "*";
+            var prel1 = document.getElementById('vrel1').value  + "*";
+            var ptec1 = document.getElementById('vtec1').value;
+            var miarreglo=[pasignatura,pobjetivos,pcomp1,pcomp2,pcomp3,pcomp4,ptemas,ptemas2,ptemas3,ptemas4,ptemas5,pben,pben2,pben3,pben4,pben5,prel1,ptec1];
+            JSON.stringify(miarreglo);
+            localStorage.setItem("mistextos",miarreglo);
+            //localStorage.setItem("textvalue",ptemas);
+            //alert("si me llego algo"+miarreglo);
+            return false;
+        }
+        
+    </SCRIPT>
+</head>
+<div id="cambiafoto"><h1>
+    <div align="center"><br><br>
+        <table width=100% bgcolor=6699ff><tr><td>
+        <a name="home"><h1 align="center" text="#000066">&iexclBienvenido a la infografía para las asignaturas!</h1></a>
+        </td></tr></table>         
+    </div>
+</div>
+<body topmargin=0 leftmargin=100 bgcolor="3366CC">
+    
+    <font face="Arial" size="6" color="black"> 
+    
+    <div align="left">
+          <form action="imprimirinfo1.html">
+          <br>Nombre del (la) docente:          <input type="text" size=60 name="docente" value="Ing. Terrazas">
+          <br>Nombre de la asignatura o submódulo:   <input type="text" size=40 id=vasig name="asignatura" value="Geometría y Trigonometría">
+            <img src="/../img/think.png" width="250" height="150" style="float:right">
+            <br>¿Cuál es el objetivo o propósito?<br> <textarea id=vobjetivos name="objetvos" rows="1" cols="110"> Que el estudiante sea capaz de resolver problemas que requieren orientación espacial. </textarea>
+            <br>¿Qué temas se verán (lista resumida)?<br><textarea id=vmens name="temas" rows="1" cols="80">Figuras geométricas y sus propiedades.</textarea><br>
+            <textarea id=vmens2 name="temas2" rows="1" cols="80"> Congruencia y semejanza de triángulos.</textarea><br>
+            <textarea id=vmens3 name="temas3" rows="1" cols="80"> Teorema de Pitágoras.</textarea><br>
+            <textarea id=vmens4 name="temas4" rows="1" cols="80"> Teorema de Tales.</textarea><br>
+            <textarea id=vmens5 name="temas5" rows="1" cols="80"> Razones trigonométricas.</textarea><br>
+            ¿Cuál será el grado de satisfacción de las y los estudiantes al finalizarla?<br>
+            <textarea id=vben name="benefcios" rows="1" cols="130"> Tendrás la capacidad de solucionar problemas usando lógica y matemáticas.</textarea><br>
+            ¿Qué efectos físicos o cognitivos tendrán las y los estudiantes el cursarla?<br>
+            <textarea id=vben2 name="benefcios2" rows="1" cols="130"> Tu mente se volverá más analítica y tomarás mejores decisiones en tu vida.</textarea><br>
+            ¿Qué aplicación tiene en la vida cotidiana?<br>
+            <textarea id=vben3 name="benefcios3" rows="1" cols="130"> Sirve para cualquier producto o proyecto que necesites diseñar (pastel, alberca, dibujos, robótica, etc).</textarea><br>
+            ¿Qué aplicación tiene en la vida profesional?<br>
+            <textarea id=vben4 name="benefcios4" rows="1" cols="130"> Ramas relacionadas con la ingeniería, tecnología y la mayoría de los oficios.</textarea><br>
+            ¿Por qué le recomienda a las y los estudiantes el cursarla?<br>
+            <textarea id=vben5 name="benefcios5" rows="1" cols="130"> Trabajarás los lóbulos parietal y frontal de tu cerebro desarrollando creatividad, agilidad mental y análisis.</textarea><br>
+            ¿Qué competencias o habilidades desarrollan las y los estudiantes?<br>
+            <textarea id=vcomp1 name="comp1" rows="1" cols="130"> Razonamiento matemático (Analizar, inferir, deducir, aplicar, etc.)</textarea><br>
+            <textarea id=vcomp2 name="comp2" rows="1" cols="130"> Resolución de problemas (comprender, resolver, construir, etc.)</textarea><br>
+            <textarea id=vcomp3 name="comp3" rows="1" cols="130"> Orientación espacial (relacionar, representar, diseñar, etc.)</textarea><br>
+            <textarea id=vcomp4 name="comp4" rows="1" cols="130"> Expresión oral y escrita (exponer, expresar, sintetizar, etc.)</textarea><br>
+            ¿Qué relación tiene con otras asignaturas o submódulos?<br>
+            <textarea id=vrel1 name="rel1" rows="1" cols="130"> Relacionada con física, química, LEOYE, computación y especialidad.</textarea><br>
+            ¿Qué metodologías o tecnologías innovadoras se utilizarán?<br>
+            <textarea id=vtec1 name="tec1" rows="1" cols="130"> Hojas de cálculo, calculadora y software como GeoGebra o Matlab.</textarea><br><br>
+            <input onClick="fun_mensaje()" type="submit" value="Generar infografía">
+          </form>
+        
+    </div>
+    <div>
+        <a href="#home"><img src="/../img/back.png" width="150" height="100"></a>
+    
+    </div>
+    </font>
+</body>
+</html></html>

@@ -1,0 +1,96 @@
+<html><!DOCTYPE html>
+<html lang="en">
+    <STYLE type="text/css">
+    H1 {
+font-size : 30pt;
+font-family : 'Times New Roman', Times, serif;
+text-decoration : black;
+text-align : center;
+background-color : tan;
+color : black;
+text-indent : 1in;
+border-style: solid;
+border-color: brown;
+}
+TD {
+font-size : 10pt;
+font-family : 'arial black';
+text-align : center;
+background-color : tan;
+color : Black;
+line-height : 20px;
+text-indent : 5px;
+border-style: solid;
+border-color: wheat;
+}
+BODY {
+font-size : 12pt;
+font-family : fantasy;
+background-color : Tan;
+font-family : arial;
+color : black;
+text-indent : 2in;
+background-image : url("/../img/center3.png");
+margin-left : 0.5in; 
+margin-right : 0.5in; 
+}
+
+    </STYLE>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    
+</head>
+<body topmargin=0 leftmargin=100 text="#000046" bgcolor="66FFFF" <b>
+    <span id="result"></span><h1>
+    <script>
+        
+        var todomiarreglo=localStorage.getItem("mistextos");
+        var todomiarregloconv=todomiarreglo.split("*,");
+
+        document.write(todomiarregloconv[0]);
+        //alert("hello");
+    </script></h1>
+<form>
+   
+    <table width="470" cellspacing="2" cellpadding="2" border="0" align="left">
+        <tr><td>OBJETIVO</td></tr>
+        <tr><td><script> document.write(todomiarregloconv[1]);</script></td></tr>
+    </table><br><br><br><br><br>
+    
+    <table width="470" cellspacing="2" cellpadding="2" border="0" align="right">
+        <tr><td>HABILIDADES QUE DESARROLLAR&AacuteS<br></td></tr>
+        <tr><td><script> document.write(todomiarregloconv[2]);</script></td></tr>
+        <tr><td><script> document.write(todomiarregloconv[3]);</script></td></tr>
+        <tr><td><script> document.write(todomiarregloconv[4]);</script></td></tr>
+        <tr><td><script> document.write(todomiarregloconv[5]);</script></td></tr>
+    </table><br><br>
+    <table width="470" cellspacing="2" cellpadding="2" border="0" align="left">
+        <tr><td>TEMAS QUE APRENDER&AacuteS<br></td></b></tr>
+        <tr><td><script>document.write(todomiarregloconv[6]);</script></td></tr>
+        <tr><td><script>document.write(todomiarregloconv[7]);</script></td></tr>
+        <tr><td><script>document.write(todomiarregloconv[8]);</script></td></tr>
+        <tr><td><script>document.write(todomiarregloconv[9]);</script></td></tr>
+        <tr><td><script>document.write(todomiarregloconv[10]);</script></td></tr>
+    </table><br><br><br><br><br><br><br><br><br><br>
+    <table width="470" cellspacing="2" cellpadding="2" border="0" align="right">
+        <tr><td>BENEFICIOS</td></tr>
+        <tr><td><script>document.write(todomiarregloconv[11]);</script></td></tr>
+        <tr><td><script>document.write(todomiarregloconv[12]);</script></td></tr>
+        <tr><td><script>document.write(todomiarregloconv[13]);</script></td></tr>
+        <tr><td><script>document.write(todomiarregloconv[14]);</script></td></tr>
+        <tr><td><script>document.write(todomiarregloconv[15]);</script></td></tr>
+    </table><br><br><br><br><br>
+    <table width="470" cellspacing="2" cellpadding="2" border="0" align="left">
+        <tr><td>SE RELACIONA CON:<br></td></tr>
+        <tr><td><script>document.write(todomiarregloconv[16]);</script></td></tr>
+    </table><br><br><br><br><br><br>
+    <table width="470" cellspacing="2" cellpadding="2" border="0" align="left">
+        <tr><td>INNOVACI&OacuteN:<br></td></tr>
+        <tr><td><script>document.write(todomiarregloconv[17]);</script></td></tr>
+    </table><br><br><br><br><br>
+</form>
+</body>
+</html>
